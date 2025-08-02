@@ -2,6 +2,8 @@ import os
 import json
 import requests
 import traceback
+
+from flasgger import Swagger
 from flask import Flask, request, jsonify
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -14,6 +16,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Setup Flask app
 app = Flask(__name__)
+swagger = Swagger(app)
 
 # ========== Website Scraper ==========
 def get_website_data():
@@ -180,6 +183,41 @@ def find_relevant_courses(question, curriculum_data):
 # ========== Flask API ==========
 @app.route('/smart-chatbot', methods=['POST'])
 def smart_chatbot():
+    """
+    Smart Chatbot API
+    ---
+    post:
+      summary: Get intelligent chatbot response based on user input and course curriculum
+      description: >
+        This endpoint receives a user message, analyzes it using website data and curriculum context,
+        and returns a contextual chatbot response using CrewAI or similar backend service.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  example: "I'm looking for courses on data science"
+                  description: User's query or message to the chatbot
+      responses:
+        200:
+          description: Chatbot response based on context and user message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: "Based on your interest, you may like our Data Science Bootcamp..."
+        400:
+          description: Bad request - message is missing
+        500:
+          description: Internal server error
+    """
     try:
         user_input = request.json.get("message", "")
         if not user_input:
@@ -200,11 +238,29 @@ def smart_chatbot():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
+
 # ========== Health Check ==========
 @app.route('/ping', methods=['GET'])
 def ping():
+    """
+    Health Check
+    ---
+    get:
+      summary: Check if the chatbot service is running
+      description: Returns a simple status message to confirm the API is alive.
+      responses:
+        200:
+          description: Service is running
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ✅ SkillCapital AI Assistant is running.
+    """
     return jsonify({"status": "✅ SkillCapital AI Assistant is running."})
-
 # ========== Main ==========
 if __name__ == '__main__':
     app.run(debug=True)
