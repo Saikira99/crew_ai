@@ -1,0 +1,369 @@
+{
+  "platform_info": {
+    "name": "SkillCapital",
+    "website": "https://www.skillcapital.ai",
+    "description": "AI-powered online learning platform",
+    "tagline": "Happy Learning"
+  },
+  "courses": {
+    "python": {
+      "name": "Python Programming",
+      "price": "999/-",
+      "duration": "30 hours",
+      "level": "Beginner to Intermediate",
+      "description": "Comprehensive Python programming course covering fundamentals to advanced concepts",
+      "curriculum": [
+        {
+          "module": "Introduction to Python",
+          "topics": [
+            "What is Python?",
+            "Setting up Python Environment",
+            "Python IDEs and Tools",
+            "Your First Python Program",
+            "Python Syntax Basics"
+          ],
+          "duration": "4 hours"
+        },
+        {
+          "module": "Python Fundamentals",
+          "topics": [
+            "Variables and Data Types",
+            "Operators and Expressions",
+            "Control Structures (if, else, elif)",
+            "Loops (for, while)",
+            "Basic Input/Output"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Data Structures in Python",
+          "topics": [
+            "Lists and Tuples",
+            "Dictionaries and Sets",
+            "String Manipulation",
+            "List Comprehensions",
+            "Working with Collections"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Functions and Modules",
+          "topics": [
+            "Function Definition and Calling",
+            "Parameters and Arguments",
+            "Return Values",
+            "Lambda Functions",
+            "Working with Modules"
+          ],
+          "duration": "4 hours"
+        },
+        {
+          "module": "Object-Oriented Programming",
+          "topics": [
+            "Classes and Objects",
+            "Inheritance and Polymorphism",
+            "Encapsulation and Abstraction",
+            "Magic Methods",
+            "Design Patterns"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "File Handling and Exception Handling",
+          "topics": [
+            "File I/O Operations",
+            "Exception Handling",
+            "Working with CSV and JSON",
+            "Context Managers",
+            "Best Practices"
+          ],
+          "duration": "4 hours"
+        }
+      ],
+      "learning_outcomes": [
+        "Master Python programming fundamentals",
+        "Build real-world applications",
+        "Understand OOP concepts",
+        "Work with data structures and algorithms",
+        "Develop problem-solving skills"
+      ],
+      "prerequisites": "Basic computer knowledge",
+      "certificate": true
+    },
+    "cloud_computing": {
+      "name": "Cloud Computing",
+      "price": "999/-",
+      "duration": "30 hours",
+      "level": "Beginner to Intermediate",
+      "description": "Comprehensive cloud computing course covering AWS, Azure, and Google Cloud",
+      "curriculum": [
+        {
+          "module": "Introduction to Cloud Computing",
+          "topics": [
+            "What is Cloud Computing?",
+            "Cloud Service Models (IaaS, PaaS, SaaS)",
+            "Cloud Deployment Models",
+            "Benefits of Cloud Computing",
+            "Cloud Security Basics"
+          ],
+          "duration": "4 hours"
+        },
+        {
+          "module": "AWS Fundamentals",
+          "topics": [
+            "AWS Account Setup and Billing",
+            "AWS Global Infrastructure",
+            "Identity and Access Management (IAM)",
+            "AWS Management Console",
+            "AWS CLI Basics"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "AWS Core Services",
+          "topics": [
+            "EC2 (Elastic Compute Cloud)",
+            "S3 (Simple Storage Service)",
+            "VPC (Virtual Private Cloud)",
+            "RDS (Relational Database Service)",
+            "CloudWatch and Monitoring"
+          ],
+          "duration": "8 hours"
+        },
+        {
+          "module": "Microsoft Azure",
+          "topics": [
+            "Azure Portal Navigation",
+            "Azure Virtual Machines",
+            "Azure Storage Services",
+            "Azure Networking",
+            "Azure Database Services"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Google Cloud Platform",
+          "topics": [
+            "GCP Console and Setup",
+            "Compute Engine",
+            "Cloud Storage",
+            "Cloud SQL",
+            "App Engine"
+          ],
+          "duration": "6 hours"
+        }
+      ],
+      "learning_outcomes": [
+        "Understand cloud computing concepts",
+        "Deploy applications on multiple cloud platforms",
+        "Manage cloud infrastructure",
+        "Implement security best practices",
+        "Optimize cloud costs"
+      ],
+      "prerequisites": "Basic IT knowledge",
+      "certificate": true
+    },
+    "devops": {
+      "name": "DevOps Engineering",
+      "price": "999/-",
+      "duration": "30 hours",
+      "level": "Intermediate",
+      "description": "Complete DevOps course covering tools, practices, and automation",
+      "curriculum": [
+        {
+          "module": "Introduction to DevOps",
+          "topics": [
+            "What is DevOps?",
+            "DevOps Culture and Principles",
+            "Software Development Lifecycle",
+            "Traditional vs DevOps Approach",
+            "DevOps Tools Overview"
+          ],
+          "duration": "4 hours"
+        },
+        {
+          "module": "Version Control with Git",
+          "topics": [
+            "Git Fundamentals",
+            "Repository Management",
+            "Branching Strategies",
+            "Merge and Rebase",
+            "GitHub and GitLab"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Continuous Integration",
+          "topics": [
+            "Jenkins Setup and Configuration",
+            "Pipeline Creation",
+            "Build Automation",
+            "Testing Integration",
+            "Code Quality Tools"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Containerization with Docker",
+          "topics": [
+            "Docker Fundamentals",
+            "Container Creation and Management",
+            "Docker Images and Registries",
+            "Docker Compose",
+            "Container Security"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Kubernetes Orchestration",
+          "topics": [
+            "Kubernetes Architecture",
+            "Pod Management",
+            "Services and Networking",
+            "Deployments and Scaling",
+            "ConfigMaps and Secrets"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Infrastructure as Code",
+          "topics": [
+            "Terraform Basics",
+            "Resource Management",
+            "State Management",
+            "Ansible Automation",
+            "Cloud Infrastructure"
+          ],
+          "duration": "2 hours"
+        }
+      ],
+      "learning_outcomes": [
+        "Implement CI/CD pipelines",
+        "Manage containerized applications",
+        "Automate infrastructure deployment",
+        "Monitor and troubleshoot systems",
+        "Apply DevOps best practices"
+      ],
+      "prerequisites": "Basic programming knowledge",
+      "certificate": true
+    },
+    "ai_ml": {
+      "name": "AI and Machine Learning",
+      "price": "999/-",
+      "duration": "30 hours",
+      "level": "Intermediate to Advanced",
+      "description": "Comprehensive AI and machine learning course with practical applications",
+      "curriculum": [
+        {
+          "module": "Introduction to AI and ML",
+          "topics": [
+            "What is Artificial Intelligence?",
+            "Machine Learning Basics",
+            "Types of Machine Learning",
+            "AI vs ML vs Deep Learning",
+            "Real-world Applications"
+          ],
+          "duration": "4 hours"
+        },
+        {
+          "module": "Data Preprocessing",
+          "topics": [
+            "Data Cleaning and Wrangling",
+            "Feature Engineering",
+            "Data Normalization",
+            "Handling Missing Data",
+            "Data Visualization"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Supervised Learning",
+          "topics": [
+            "Linear Regression",
+            "Logistic Regression",
+            "Decision Trees",
+            "Random Forest",
+            "Support Vector Machines"
+          ],
+          "duration": "8 hours"
+        },
+        {
+          "module": "Unsupervised Learning",
+          "topics": [
+            "Clustering Algorithms",
+            "K-Means Clustering",
+            "Hierarchical Clustering",
+            "Principal Component Analysis",
+            "Dimensionality Reduction"
+          ],
+          "duration": "6 hours"
+        },
+        {
+          "module": "Deep Learning",
+          "topics": [
+            "Neural Networks Basics",
+            "Convolutional Neural Networks (CNN)",
+            "Recurrent Neural Networks (RNN)",
+            "Natural Language Processing",
+            "Computer Vision"
+          ],
+          "duration": "6 hours"
+        }
+      ],
+      "learning_outcomes": [
+        "Understand AI and ML concepts",
+        "Build predictive models",
+        "Implement deep learning solutions",
+        "Work with AI frameworks",
+        "Deploy ML models"
+      ],
+      "prerequisites": "Python programming knowledge",
+      "certificate": true
+    }
+  },
+  "pricing": {
+    "all_courses": "999/-",
+    "payment_options": [
+      "Online payment",
+      "EMI available",
+      "Group discounts available"
+    ],
+    "refund_policy": "7-day money-back guarantee"
+  },
+  "enrollment": {
+    "process": [
+      "Visit skillcapital.ai",
+      "Choose your course",
+      "Complete registration",
+      "Make payment",
+      "Start learning immediately"
+    ],
+    "requirements": [
+      "Basic computer knowledge",
+      "Stable internet connection",
+      "Dedication to learn"
+    ],
+    "support": [
+      "24/7 technical support",
+      "Community forum access",
+      "Mentor guidance",
+      "Career counseling"
+    ]
+  },
+  "features": {
+    "platform": [
+      "AI-powered learning",
+      "Interactive exercises",
+      "Real-world projects",
+      "Progress tracking",
+      "Certificate upon completion"
+    ],
+    "benefits": [
+      "Learn at your own pace",
+      "Access from anywhere",
+      "Industry-relevant curriculum",
+      "Job-ready skills",
+      "Career placement support"
+    ]
+  }
+} 
